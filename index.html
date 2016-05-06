@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
 	<link rel="stylesheet" href="css/main.css">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src="js/app.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- jquery mobile CDN -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />	
+	
 	<meta charset="UTF-8">
-	<title>Default</title>
+	<title>Time is Dough</title>
 </head>
 <body>
+	<div data-role="page" id="home" data-theme="a">
+		<div data-role="header">
+			<h1>Time is Dough</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<a data-role="button" href="#results">Submit
+			</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>doughdoughtech</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="results">
+		<div data-role="header">
+			<h1>Time is Dough</h1>
+		</div>
+		<div data-role="main" class="ui-content" data-theme="a">
+			<a data-role="button" href="#home">Back
+			</a>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h1>doughdoughtech</h1>
+		</div>
+	</div>
+
+	<!-- jquery and jquery mobile CDN -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	
+	<script src="js/app.js"></script>
 </body>
 </html>
