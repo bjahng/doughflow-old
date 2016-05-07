@@ -5,33 +5,49 @@
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jquery mobile CDN -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">	
 	
 	<meta charset="UTF-8">
 	<title>Time is Dough</title>
 </head>
 <body>
 	<div data-role="page" id="home" data-theme="a">
-		<div data-role="header">
-			<h1>Time is Dough</h1>
-		</div>
-		<div data-role="main" class="ui-content">
-			<a data-role="button" href="#results">Submit
-			</a>
-		</div>
-		<div data-role="footer" data-position="fixed">
-			<h1>doughdoughtech</h1>
-		</div>
-	</div>
 
-	<div data-role="page" id="results">
+		<!-- Header -->
 		<div data-role="header">
 			<h1>Time is Dough</h1>
 		</div>
-		<div data-role="main" class="ui-content" data-theme="a">
-			<a data-role="button" href="#home">Back
-			</a>
+		
+		<!-- Main -->
+		<div data-role="main" class="ui-content">
+			
+			<!-- User Input -->
+			<div id="user_input">
+				<form method="post">
+					<div id="part1">
+						<h2>My earnings:</h2>
+						<input type="text" id="earnings" data-wrapper-class="custom-width" />
+						<select data-inline="true">
+								<option value="annually">annually</option>
+								<option value="hourly">hourly</option>
+						</select>
+					</div>
+					
+					<div id="part2">
+						<h2>Item Price:</h2>
+						<input type="text" id="item_price" data-wrapper-class="custom-width" />
+					</div>
+					<button type="submit" class="ui-btn-active" data-inline="true">Submit</button>
+				</form>
+			</div>
+
+			<!-- Results -->
+			<div id="results">
+			</div>
+
 		</div>
+
+		<!-- Footer -->
 		<div data-role="footer" data-position="fixed">
 			<h1>doughdoughtech</h1>
 		</div>

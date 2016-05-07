@@ -1,0 +1,16 @@
+body {
+	text-align: center;
+}
+
+#user_input input {
+	text-align: center;
+}
+
+#part1 {
+	text-align: center;
+}
+
+.custom-width {
+	max-width: 200px;
+	margin: 0 auto !important;
+}
