@@ -2,8 +2,68 @@ body {
 	text-align: center;
 }
 
+#home {
+	background: url("../images/dollar.jpg");
+	background-position: 60% 50%;
+	background-attachment: fixed;
+	background-size: 250% 100%;
+}
+
+.ui-content {
+	padding-top: 0 !important;
+}
+
+.ui-header {
+	background: #003300 !important;
+	border: none !important;
+}
+
+.ui-header .ui-title {
+	font-family: "Rozha One", serif;
+	font-size: 42px !important;
+	letter-spacing: 1.5px;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	padding: 0 !important;
+	margin: 0 auto !important;
+}
+
+#user_input {
+	font-family: "Rozha One", serif;
+	color: #009900;
+	text-shadow: -1px 0 25px #000, 0 1px 25px #000, 1px 0 25px #000, 0 -1px 25px #000;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
 #user_input input {
 	text-align: center;
+}
+
+#user_input h2 {
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.dollar-btn {
+	font-size: 20px !important;
+	padding-top: .4em !important;
+	padding-bottom: .4em !important;
+	background: #006600 !important;
+}
+
+#user_input .ui-select {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+#user_input .ui-controlgroup {
+	margin: 5px 0 10px 0 !important;
+}
+
+#earnings_type-button {
+	background: #006600 !important;
+	font-family: "Rozha One", serif;
+	text-shadow: 1px 1px 1px #000;
 }
 
 #part1 {
@@ -11,6 +71,31 @@ body {
 }
 
 .custom-width {
-	max-width: 200px;
+	max-width: 175px;
 	margin: 0 auto !important;
+}
+#results {
+	margin-top: 50px;
+}
+
+#results_text .error {
+	color: #ff0000;
+}
+
+#results_text .time {
+	font-weight: 700;
+	font-style: italic;
+}
+
+#note .small_print {
+	font-size: 11px;
+}
+
+.controlgroup-textinput {
+    padding-top: .22em !important;
+    padding-bottom: .22em !important;
+}
+
+.ui-footer {
+	font-family: "Satisfy", cursive;
 }

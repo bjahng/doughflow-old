@@ -5,17 +5,20 @@
 	<link rel="stylesheet" href="css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- jquery mobile CDN -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Satisfy|Rozha+One' rel='stylesheet' type='text/css'>
 	
 	<meta charset="UTF-8">
-	<title>Time is Dough</title>
+	<title>Dough Flow</title>
 </head>
+
 <body>
-	<div data-role="page" id="home" data-theme="a">
+	<div data-role="page" id="home" data-theme="b">
 
 		<!-- Header -->
 		<div data-role="header">
-			<h1>Time is Dough</h1>
+			<h1>DOUGH FLOW</h1>
 		</div>
 		
 		<!-- Main -->
@@ -23,11 +26,14 @@
 			
 			<!-- User Input -->
 			<div id="user_input">
-				<form method="post">
+				<form>
 					<div id="part1">
-						<h2>My earnings:</h2>
-						<input type="text" id="earnings" data-wrapper-class="custom-width" />
-						<select data-inline="true">
+						<h2>My Earnings:</h2>
+						<div data-role="controlgroup" data-type="horizontal">
+							<button class="dollar-btn">$</button>
+							<input type="text" id="earnings" maxlength="17" data-wrapper-class="controlgroup-textinput ui-btn custom-width" />
+						</div>
+						<select id="earnings_type" data-inline="true">
 								<option value="annually">annually</option>
 								<option value="hourly">hourly</option>
 						</select>
@@ -35,14 +41,22 @@
 					
 					<div id="part2">
 						<h2>Item Price:</h2>
-						<input type="text" id="item_price" data-wrapper-class="custom-width" />
+						<div data-role="controlgroup" data-type="horizontal">
+							<button class="dollar-btn">$</button>
+							<input type="text" id="item_price" maxlength="17" data-wrapper-class="controlgroup-textinput ui-btn custom-width" />
+						</div>
 					</div>
-					<button type="submit" class="ui-btn-active" data-inline="true">Submit</button>
+					<button type="submit" class="ui-btn-active submit" data-inline="true">Submit</button>
 				</form>
 			</div>
 
 			<!-- Results -->
 			<div id="results">
+				<div id="results_text">
+				</div>
+				<button class="ui-btn-active back" data-inline="true">Back</button>
+				<div id="note">
+				</div>
 			</div>
 
 		</div>
@@ -51,6 +65,7 @@
 		<div data-role="footer" data-position="fixed">
 			<h1>doughdoughtech</h1>
 		</div>
+
 	</div>
 
 	<!-- jquery and jquery mobile CDN -->
